@@ -34,6 +34,7 @@ Then you'll want to create an instance of SteamClient and any handlers you need,
 ```js
 var steamClient = new Steam.SteamClient();
 var steamUser = new Steam.SteamUser(steamClient);
+steamClient.setProxySock5('127.0.0.1', '1085')
 steamClient.connect();
 steamClient.on('connected', function() {
   steamUser.logOn({
@@ -105,6 +106,9 @@ Your session ID while logged on, otherwise unspecified. (Note: this has nothing 
 Your own SteamID while logged on, otherwise unspecified. Must be set to a valid initial value before sending a logon message ([SteamUser#logOn](lib/handlers/user#logonlogondetails) does that for you).
 
 ## Methods
+
+### setProxySock5(host, port)
+Setting socks5 proxy
 
 ### connect()
 
