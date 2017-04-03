@@ -34,7 +34,7 @@ Then you'll want to create an instance of SteamClient and any handlers you need,
 ```js
 var steamClient = new Steam.SteamClient();
 var steamUser = new Steam.SteamUser(steamClient);
-steamClient.setProxySock5('127.0.0.1', '1085')
+steamClient.setProxySocks5('127.0.0.1', '1085')
 steamClient.connect();
 steamClient.on('connected', function() {
   steamUser.logOn({
