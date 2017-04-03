@@ -107,7 +107,7 @@ Your own SteamID while logged on, otherwise unspecified. Must be set to a valid 
 
 ## Methods
 
-### setProxySock5(host, port)
+### setProxySocks5(host, port, username, password)
 Setting socks5 proxy
 
 ### connect()
