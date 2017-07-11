@@ -13,8 +13,8 @@
     "buffer-crc32": "^0.2",
     "bytebuffer": "^5.0",
     "steam-crypto": "^0.0",
-    "steam-resources": "https://github.com/seishun/node-steam-resources.git#v1.0.0",
-    "socks5-client" : "https://github.com/dizard/socks5-client.git"
+    "steam-resources": "https://github.com/DoctorMcKay/node-steam-resources",
+    "socks5-client": "https://github.com/dizard/socks5-client.git"
   },
   "bundledDependencies": [
     "steam-resources"
